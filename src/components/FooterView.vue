@@ -6,13 +6,15 @@ export default {
 
 <template>
   <footer>
-    <p class="footer-text">asdfasdfasdf</p>
+    <p class="footer-text">Copyright © 2024 • JINxVITA • All Rights Reserved.</p>
   </footer>
 </template>
 
 <style scoped>
 footer {
-  background-color: #333;
+  margin-top: 2rem;
+  background-color: black;
+  opacity: 0.2;
   color: white;
 }
 

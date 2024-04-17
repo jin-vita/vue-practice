@@ -1,4 +1,9 @@
 #app {
+    overflow-y: scroll;
     text-align: center;
     padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }

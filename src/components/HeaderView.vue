@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="nav nav-pills">
+    <nav class="nav nav-pills">
       <div
           v-for="nav in navigations"
           :key="nav.name"
@@ -12,7 +12,7 @@
           <b>{{ nav.name }}</b>
         </RouterLink>
       </div>
-    </div>
+    </nav>
   </header>
 </template>
 

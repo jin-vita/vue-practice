@@ -9,7 +9,7 @@ const routes = [
         component: HomeView
     },
     {
-        path: '/movie',   //추가된 내용
+        path: '/movie',
         component: MovieView
     },
     {

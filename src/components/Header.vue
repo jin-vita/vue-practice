@@ -1,7 +1,7 @@
 <template>
   <header>
-    <nav class="nav nav-pills">
-      <div
+    <ul class="nav nav-pills justify-content-center">
+      <li
           v-for="nav in navigations"
           :key="nav.name"
           class="nav-item">
@@ -11,8 +11,8 @@
             class="nav-link">
           <b>{{ nav.name }}</b>
         </RouterLink>
-      </div>
-    </nav>
+      </li>
+    </ul>
   </header>
 </template>
 
@@ -49,7 +49,6 @@ header {
   background-color: black;
   opacity: 0.8;
   z-index: 999;
-  justify-content: center;
-  display: flex;
+  justify-content: space-between;
 }
 </style>

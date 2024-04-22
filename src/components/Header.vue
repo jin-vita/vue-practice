@@ -27,7 +27,7 @@ export default {
           href: '/'
         },
         {
-          name: 'Movie',
+          name: 'Game',
           href: '/movie'
         },
         {

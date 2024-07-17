@@ -17,11 +17,11 @@
     </div>
     <v-divider />
     <div>
-      <span>빌딩 : </span>
+      <div>빌딩</div>
       <select v-model="selectedBuilding" @change="onBuildingChanged">
         <option v-for="(item, index) in buildingList" :key="index" :value="item.id">{{ item.name }}</option>
       </select>
-      <v-select label="빌딩" :items="[`buildingList`,'aa']" />
+      <v-divider />
       <v-select
           v-model="select"
           :hint="`${select.state}, ${select.abbr}`"
@@ -33,6 +33,9 @@
           return-object
           single-line
       ></v-select>
+      <div>
+        Selected State Abbreviation: {{ select.abbr }}
+      </div>
     </div>
     <v-divider />
     <div>
@@ -90,7 +93,7 @@ const buildingList = [
     name: '건물2'
   },
 ]
-const select = { state: 'Florida', abbr: 'FL' }
+const select = ref({ state: 'Florida', abbr: 'FL' })
 const items = [
   { state: 'Florida', abbr: 'FL' },
   { state: 'Georgia', abbr: 'GA' },
